@@ -1,4 +1,4 @@
-page-home {
+page-insert-student {
 	.background {
 		background-image: url('../assets/bg.jpg');
 	}
@@ -16,10 +16,14 @@ page-home {
 		background: rgba(0, 0, 0, 0.5);
 		border-radius: 5px;
 	}
+
+	.cont{
+		margin-bottom: 50px;
+	}
 //
     .myHead {
         // margin-top: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         padding-top:20px;
 		box-shadow: none;
 		background: rgba(0, 0, 0, 0.5);

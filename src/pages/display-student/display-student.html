@@ -1,0 +1,29 @@
+<ion-content class="background">
+   <!--<ion-card class="myHead">
+     <div class="myHeadSub">
+       <b> View Students </b>
+     </div>
+   </ion-card>-->
+	<ion-card>
+		<ion-card-header>
+			View Form
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list no-line>
+				<ion-item *ngFor="let item of items">
+                    <h2>{{ item.studentId }} </h2>
+                    <h2>{{ item.studentName }} </h2>
+                    <h2>{{ item.studentConNum }} </h2>
+                    <button
+                      ion-button
+                      color="primary"
+                      item-right
+                      (click)="viewEntry({ record: item })">View</button>
+              </ion-item>
+
+
+			</ion-list>
+		</ion-card-content>
+	</ion-card>
+	<button class="bottom" ion-button clear full color="light">Don't have an account? Sign up</button>
+</ion-content>

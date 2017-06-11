@@ -1,0 +1,99 @@
+<ion-content class="background">
+   <ion-card class="myHead">
+     <div class="myHeadSub">
+       <b> Insert Student </b>
+     </div>
+   </ion-card>
+   <div class="cont">
+	<ion-card>
+		<ion-card-header>
+			Insert Form
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list no-line>
+          <div *ngIf="!hideForm">
+            <form [formGroup]="form" (ngSubmit)="saveEntry()" >
+                <ion-item-group>
+                  <ion-item>
+                      <ion-input type="text" placeholder="StudentId"  formControlName="stuId" [(ngModel)]="studentId"></ion-input>
+                    </ion-item>
+                </ion-item-group>
+                  <ion-item>
+                    <ion-input type="text" placeholder="StudentName"  formControlName="stuName" [(ngModel)]="studentName"></ion-input>
+                  </ion-item>
+                    <ion-item>
+                    <ion-input type="text" placeholder="StudentContactNumber" formControlName="stuConNum" [(ngModel)]="studentConNum"></ion-input>
+                  </ion-item>
+             
+              <button ion-button block outline color="light"   [disabled]="!form.valid" >Save</button>
+              <button ion-button block outline color="light" (click)="viewEntry_()" >View Students</button>
+               
+           </form>
+          </div>
+			</ion-list>
+		</ion-card-content>
+	</ion-card>
+   </div>
+</ion-content>
+
+
+<!--
+ <ion-item>
+              <ion-input type="text" placeholder="StudentId"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input type="text" placeholder="StudentName"></ion-input>
+            </ion-item>
+              <ion-item>
+              <ion-input type="text" placeholder="StudentContactNumber"></ion-input>
+            </ion-item>-->
+
+
+
+
+
+
+<!--<ion-content class="background">
+   <ion-card class="myHead">
+     <div class="myHeadSub">
+       <b>Insert Student </b>
+     </div>
+   </ion-card>
+	<ion-card>
+		<ion-card-header>
+			Insert Form
+		</ion-card-header>
+		<ion-card-content>-->
+
+       <!--<div *ngIf="!hideForm">
+         <form [formGroup]="form" (ngSubmit)="saveEntry()">
+          <ion-list no-line>
+            <ion-item>
+              <ion-input type="text" placeholder="Student Id" formControlName="id"
+                            [(ngModel)]="studentId"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input type="text" placeholder="Student name" formControlName="name"
+                            [(ngModel)]="studentName"></ion-input>
+            </ion-item>
+              <ion-item>
+              <ion-input type="text" placeholder="Student Grade" formControlName="grade"
+                            [(ngModel)]="studentGrade"></ion-input>
+            </ion-item>
+              <ion-item>
+              <ion-input type="text" placeholder="Contact Number" formControlName="contact"
+                            [(ngModel)]="studentContact"></ion-input>
+            </ion-item>
+            <!--<a>Forgot your login detail? <b>Get help signing in</b></a>-->
+            <!--<button ion-button block outline color="light" [disabled]="!form.valid">Insert</button>-->
+            <!--<p>OR</p>-->
+            <!--<button ion-button block color="facebook">
+              <ion-icon name="logo-facebook"></ion-icon> Login with facebook
+            </button>-->
+          <!--</ion-list>
+         </form>
+       </div>-->
+		<!--</ion-card-content>-->
+	<!--</ion-card>-->
+	<!--<button class="bottom" ion-button clear full color="light">Don't have an account? Sign up</button>-->
+<!--</ion-content>-->

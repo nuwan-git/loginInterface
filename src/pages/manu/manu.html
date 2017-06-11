@@ -1,0 +1,27 @@
+<ion-content class="background">
+  <!--<ion-menu [content]="content">-->
+  <ion-card class="myHead">
+     <div class="myHeadSub">
+       <b>Menu </b>
+     </div>
+   </ion-card>
+  <ion-card-content>
+    <ion-list>
+      <button ion-item (click)="InsertStudentPage()">
+        Insert Student
+      </button>
+      <button ion-item (click)="viewMenu()">
+        Menu
+      </button>
+      <button ion-item (click)="openPage(eventsPage)">
+        Events
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Close Menu
+      </button>
+    </ion-list>
+  </ion-card-content>
+<!--</ion-menu>
+
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>-->
+</ion-content>
